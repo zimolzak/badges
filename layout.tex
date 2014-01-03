@@ -9,46 +9,40 @@
 
 \setlength{\unitlength}{1in}
 
-\begin{picture}(8.33,9.72)
+\begin{picture}(8.3,9.3)
 
-\put(0,0){\includegraphics[width=4in]{lores.png}}
-\put(4,0){\includegraphics[width=4in]{lores.png}}
-\put(0,3){\includegraphics[width=4in]{lores.png}}
-\put(4,3){\includegraphics[width=4in]{lores.png}}
-\put(0,6){\includegraphics[width=4in]{lores.png}}
-\put(4,6){\includegraphics[width=4in]{lores.png}}
+% why does xdvipdfmx hate PNG?
+%height of EPS = 1.33
+
+\put(0,0){\includegraphics[width=4in]{lores.png}} 
+\put(4,1.67){\includegraphics[width=4in]{cropped.eps}}
+\put(0,4.67){\includegraphics[width=4in]{cropped.eps}}
+\put(4,4.67){\includegraphics[width=4in]{cropped.eps}}
+\put(0,7.67){\includegraphics[width=4in]{cropped.eps}}
+\put(4,7.67){\includegraphics[width=4in]{cropped.eps}}
 
 \put(0,4.4){
 
 \begin{tabular}{|c|c|} % p{4in}
 
 \hline
-\rule{0pt}{1.29in}\Huge Somelongfirstn & \Huge First \\
-\Huge Last & \Huge Last \\
-\rule{0pt}{1.29in} & \\
-\hline
+\rule{0pt}{1.5in}\Huge Somelongfirstn & \Huge First \\
+\rule[-1.3in]{0pt}{1.5in}\Huge Last & \Huge Last \\
 
+\hline
 \rule{0pt}{1.29in}\Huge First & \Huge First \\
-\Huge Anotherlongn & \Huge Anotherlongn \\
-\rule{0pt}{1.29in} & \\
-\hline
+\rule[-1.3in]{0pt}{1.5in}\Huge Anotherlongn & \Huge Anotherlongn \\
 
-\rule{0pt}{1.29in}\Huge Somelongfirstn & \Huge Somelongfirstn \\
-\Huge Last & \Huge Anotherlongn \\
-\rule{0pt}{1.29in} & \\
+\hline
+\rule{0pt}{1.5in}\Huge Jeffrey & \Huge Somelongfirstn \\
+\rule[-1.3in]{0pt}{1.5in}\Huge Drazen & \Huge Anotherlongn \\
+
 \hline
 
 \end{tabular}
 
-
 }
-
 
 \end{picture}
 
-
-
-
-
 \end{document}
-
