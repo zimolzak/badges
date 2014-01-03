@@ -3,7 +3,7 @@
 \usepackage{graphicx}
 \begin{document}
 
-\renewcommand{\tabcolsep}{0.8in} % affects the width
+%\renewcommand{\tabcolsep}{0.8in} % affects the width
 
 \setlength{\unitlength}{1in}
 
@@ -32,21 +32,23 @@
 \put(-0.05,3){\line(-1,0){1}}
 \put(-0.05,6){\line(-1,0){1}}
 
-\put(0,4.4){
+% \put(-0.05,4.5){\line(1,1){1}} % ref line to make visible the table xy coords.
 
-\begin{tabular}{cc} % p{4in}
+\put(-0.05,4.45){
 
-%\hline
-\rule{0pt}{1.5in}\Huge Somelongfirstn & \Huge First \\
-\rule[-1.2in]{0pt}{1.5in}\Huge \ln Last & \Huge \ln Last \\
+\begin{tabular}{C{3.83in}C{3.83in}} % p{4in}
 
 %\hline
-\rule{0pt}{1.29in}\Huge First & \Huge First \\
-\rule[-1.2in]{0pt}{1.5in}\Huge \ln Anotherlongn & \Huge \ln Anotherlongn \\
+\rule{0pt}{1.45in}\Huge Firstname1 & \rule{0pt}{1.45in}\Huge Firstname2 \\
+\rule[-1.2in]{0pt}{1.45in}\Huge \ln Lastname1 & \rule[-1.2in]{0pt}{1.45in}\Huge \ln Lastname2 \\
 
 %\hline
-\rule{0pt}{1.5in}\Huge Jeffrey & \Huge Somelongfirstn \\
-\rule[-1.2in]{0pt}{1.5in}\Huge \ln Drazen & \Huge \ln Anotherlongn \\
+\rule{0pt}{1.45in}\Huge Firstname3 & \rule{0pt}{1.45in}\Huge Firstname4 \\
+\rule[-1.2in]{0pt}{1.45in}\Huge \ln Lastname3 & \rule[-1.2in]{0pt}{1.45in}\Huge \ln Lastname4 \\
+
+%\hline
+\rule{0pt}{1.45in}\Huge Firstname5 & \rule{0pt}{1.45in}\Huge Firstname6 \\
+\rule[-1.2in]{0pt}{1.45in}\Huge \ln Lastname5 & \rule[-1.2in]{0pt}{1.45in}\Huge \ln Lastname6 \\
 
 %\hline
 
