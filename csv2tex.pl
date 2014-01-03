@@ -1,4 +1,5 @@
 #!/usr/bin/perl -w
+# usage: ./csv2tex.pl allnames_0a.csv > out.tex; xelatex out.tex 
 use strict;
 
 my $linecount = 0;
@@ -53,6 +54,6 @@ while(<>){
 }
 
 print $endpage if $linecount != 6; # still kludgy if odd num of names
+# last page is a fail anyway, because of LaTeX.
 
 print $outro;
-
