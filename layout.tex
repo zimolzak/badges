@@ -3,59 +3,42 @@
 \usepackage{graphicx}
 \begin{document}
 
-%\renewcommand{\tabcolsep}{0.8in} % affects the width
-
 \setlength{\unitlength}{1in}
 
 \begin{picture}(8.3,9.3)
-
-% why does xdvipdfmx hate PNG?
-%height of EPS = 1.33
-
-\put(0,1.67){\includegraphics[width=4in]{cropped.eps}} 
-\put(4,1.67){\includegraphics[width=4in]{cropped.eps}}
-\put(0,4.67){\includegraphics[width=4in]{cropped.eps}}
-\put(4,4.67){\includegraphics[width=4in]{cropped.eps}}
-\put(0,7.67){\includegraphics[width=4in]{cropped.eps}}
-\put(4,7.67){\includegraphics[width=4in]{cropped.eps}}
-
-\put(4,-0.3){\line(0,-1){1}} %vert
-\put(-0.05,0){\line(-1,0){1}}
-\put(8.1,0){\line(1,0){1}}
-
-\put(4,9.5){\line(0,1){1}} %vert
-\put(-0.05,9){\line(-1,0){1}} %too obvious
-\put(8.1,9){\line(1,0){1}}
-
-\put(8.1,3){\line(1,0){1}}
-\put(8.1,6){\line(1,0){1}}
-\put(-0.05,3){\line(-1,0){1}}
-\put(-0.05,6){\line(-1,0){1}}
-
-% \put(-0.05,4.5){\line(1,1){1}} % ref line to make visible the table xy coords.
-
+\drawbackground
 \put(-0.05,4.45){
-
-\begin{tabular}{C{3.83in}C{3.83in}} % p{4in}
-
-%\hline
-\rule{0pt}{1.45in}\Huge Firstname1 & \rule{0pt}{1.45in}\Huge Firstname2 \\
-\rule[-1.2in]{0pt}{1.45in}\Huge \ln Lastname1 & \rule[-1.2in]{0pt}{1.45in}\Huge \ln Lastname2 \\
-
-%\hline
-\rule{0pt}{1.45in}\Huge Firstname3 & \rule{0pt}{1.45in}\Huge Firstname4 \\
-\rule[-1.2in]{0pt}{1.45in}\Huge \ln Lastname3 & \rule[-1.2in]{0pt}{1.45in}\Huge \ln Lastname4 \\
-
-%\hline
-\rule{0pt}{1.45in}\Huge Firstname5 & \rule{0pt}{1.45in}\Huge Firstname6 \\
-\rule[-1.2in]{0pt}{1.45in}\Huge \ln Lastname5 & \rule[-1.2in]{0pt}{1.45in}\Huge \ln Lastname6 \\
-
-%\hline
-
-\end{tabular}
-
+ \begin{tabular}{C{3.83in}C{3.83in}}
+ \rowof{Andy}{Zed}{Leo}{Thecat}
+ \rowof{Andy}{Zed}{Leo}{Thecat}
+ \rowof{Andy}{Zed}{Leo}{Thecat}
+ \end{tabular}
 }
-
 \end{picture}
+\newpage
+
+\begin{picture}(8.3,9.3)
+\drawbackground
+\put(-0.05,4.45){
+ \begin{tabular}{C{3.83in}C{3.83in}}
+ \rowof{Andy}{Zed}{Leo}{Thecat}
+ \rowof{Andy}{Zed}{Leo}{Thecat}
+ \rowof{Andy}{Zed}{Leo}{Thecat}
+ \end{tabular}
+}
+\end{picture}
+\newpage
+
+\begin{picture}(8.3,9.3)
+\drawbackground
+\put(-0.05,4.45){
+ \begin{tabular}{C{3.83in}C{3.83in}}
+ \rowof{Andy}{Zed}{Leo}{Thecat}
+ \rowof{Andy}{Zed}{Leo}{Thecat}
+ \rowof{Andy}{Zed}{Leo}{Thecat}
+ \end{tabular}
+}
+\end{picture}
+\newpage
 
 \end{document}
